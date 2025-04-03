@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таблицы на странице</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    .game {
+      display: flex;
+      width: 80%;
+      background: linear-gradient(15deg, #376e6f, #da7b93, #4a1723)
+    }
+
+    .tours {
+      width: 30%;
+      font-family: Gill Sans, sans-serif;
+    }
+
+    .questions {
+      width: 70%;
+    }
+
+    .teams-container {
+      background-color: #79afb0;
+      width: 20%;
+    }
+
+    .teams {
+      margin: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .game-table {
+      border-collapse: separate;
+      border-spacing: 30px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+
+    td {
+      background-color: #f0f0f0;
+    }
+
+    .question-button {
+      font-family: Marker Felt, fantasy;
+      background: #519c8a;
+      width: 100px;
+      height: 50px;
+      border-radius: 15px;
+    }
+
+    .question-button:hover {
+      background: #9bd4c4;
+    }
+
+    .tour-name {
+      width: 100px;
+      height: 50px;
+      border-radius: 15px;
+      background: #faa7b5;
+      font-size: 20px;
+    }
+
+    .team-name {
+      width: 190px;
+      height: 40px;
+      background-color: #e0e0e0;
+      text-align: center;
+    }
+
+    input {
+      width: 190px;
+      height: 25px;
+      background-color: #fac3cc;
+    }
+
+    input:focus {
+      border: 1px solid #000;
+    }
+
+    .add-team-button {
+      margin-top: 500px;
+      width: 190px;
+      height: 50px;
+      background-color: #e0e0e0;
+      border-radius: 15px;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .answer-buttons {
+      background-color: transparent;
+    }
+
+    .wrong-answer-button {
+
+      float: right;
+      background-color: transparent;
+    }
+
+    img {
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="game">
+    <div class="tours">
+      <table class="game-table">
+        <tr>
+          <td class="tour-name">Зарубежные исполнители</td>
+        </tr>
+        <tr>
+          <td class="tour-name">Зарубежные группы</td>
+        </tr>
+        <tr>
+          <td class="tour-name">Рок</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="questions">
+      <table class="game-table">
+        <tr>
+          <td class="button question-button">100</td>
+          <td class="button question-button">200</td>
+          <td class="button question-button">300</td>
+        </tr>
+        <tr>
+          <td class="button question-button">100</td>
+          <td class="button question-button">200</td>
+          <td class="button question-button">300</td>
+        </tr>
+        <tr>
+          <td class="button question-button">100</td>
+          <td class="button question-button">200</td>
+          <td class="button question-button">300</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+<div class="teams-container">
+  <div class="teams">
+    <p class="team-name">Имя команды</p>
+    <input type="text" maxlength="25"/>
+    <div class="answer-buttons"></div>
+    <div class="button correct-answer-button"><img src="correct_answer.png" width="30" height="30"  alt=""></div>
+  <button class="button add-team-button">Создать команду</button>
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>

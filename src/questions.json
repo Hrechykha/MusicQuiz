@@ -1,0 +1,17 @@
+{
+  "foreign-signers": {
+    "100": "Christina Aguilera",
+    "200": "Madonna",
+    "300": "Weeknd"
+  },
+  "foreign-bands": {
+    "100": "Christions Aguilera",
+    "200": "Madonna",
+    "300": "Weeknd"
+  },
+  "rock": {
+    "100": "Slipknot",
+    "200": "Korn",
+    "300": "Disturbed"
+  }
+}

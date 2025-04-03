@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+yarn-error.log
+
+# IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Editor specific files
+.vscode/
+.DS_Store
+
+
+# Environment variables
+.env
+
+# Compiled output
+dist/
+build/
+
+# Compiler cache
+.swc
+
+# Linting
+.eslintcache
+
+# Local config
+config.local.js
+
+
+
+
+
+
+
